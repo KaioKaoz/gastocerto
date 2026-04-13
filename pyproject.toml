@@ -20,3 +20,8 @@ ignore = ["E501"]
 DJANGO_SETTINGS_MODULE = "config.settings"
 python_files = ["test_*.py"]
 testpaths = ["tests"]
+[tool.ruff]
+exclude = [
+    "*/migrations/*",
+    "venv",
+]
