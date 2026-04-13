@@ -20,20 +20,3 @@ ignore = ["E501"]
 DJANGO_SETTINGS_MODULE = "config.settings"
 python_files = ["test_*.py"]
 testpaths = ["tests"]
-# ... (outras coisas do seu projeto) ...
-
-[tool.ruff]
-# Aqui estarão as configurações antigas que já existiam
-line-length = 88 
-
-# E aqui você cola a nossa nova regra (tudo no mesmo bloco)
-exclude = [
-    "*/migrations/*",
-    "venv",
-]
-
-# ... (resto do arquivo) ...
-exclude = [
-    "*/migrations/*",
-    "venv",
-]
