@@ -2,8 +2,6 @@
 Migration inicial — cria a tabela Gasto.
 """
 
-import django.db.models.deletion
-import django.utils.timezone
 from django.db import migrations, models
 
 
