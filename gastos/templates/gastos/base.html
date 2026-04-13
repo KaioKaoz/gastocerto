@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>💰 GastoCerto</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #f0f4f8;
+      color: #1a202c;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #2d3748;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    header h1 { font-size: 1.4rem; font-weight: 700; }
+    header a { color: #a0aec0; text-decoration: none; font-size: 0.9rem; margin-left: auto; }
+    header a:hover { color: white; }
+
+    main { max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 1.1rem;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: opacity 0.15s;
+    }
+    .btn:hover { opacity: 0.85; }
+    .btn-primary { background: #4299e1; color: white; }
+    .btn-danger  { background: #fc8181; color: white; }
+    .btn-secondary { background: #e2e8f0; color: #2d3748; }
+    .btn-sm { padding: 0.3rem 0.7rem; font-size: 0.8rem; }
+
+    .form-control {
+      width: 100%;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid #cbd5e0;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      margin-top: 0.3rem;
+      margin-bottom: 1rem;
+    }
+    label { font-weight: 600; font-size: 0.9rem; }
+
+    .errorlist { color: #e53e3e; font-size: 0.85rem; list-style: none; margin-top: 0.2rem; }
+
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { background: #edf2f7; text-align: left; padding: 0.6rem 0.8rem; font-weight: 700; }
+    td { padding: 0.6rem 0.8rem; border-bottom: 1px solid #edf2f7; }
+    tr:hover td { background: #f7fafc; }
+
+    .badge {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      background: #bee3f8;
+      color: #2b6cb0;
+    }
+
+    .total-row td { font-weight: 700; background: #ebf8ff; }
+  </style>
+</head>
+<body>
+  <header>
+    <span>💰</span>
+    <h1>GastoCerto</h1>
+    <a href="{% url 'lista_gastos' %}">← Ver todos os gastos</a>
+  </header>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>

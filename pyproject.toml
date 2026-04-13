@@ -1,0 +1,22 @@
+[project]
+name = "gastocerto"
+version = "1.0.0"
+description = "Gerenciador de gastos pessoais para controle financeiro acessível."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Seu Nome Aqui" }]
+license = { text = "MIT" }
+dependencies = ["Django>=4.2,<5.0"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "config.settings"
+python_files = ["test_*.py"]
+testpaths = ["tests"]
