@@ -9,7 +9,7 @@ from django.shortcuts import get_object_or_404, redirect, render
 
 from .forms import FiltroForm, GastoForm
 from .models import Categoria, Gasto
-from .services import buscar_cotacoes
+
 
 def lista_gastos(request):
     """Lista todos os gastos com filtro opcional por categoria."""
