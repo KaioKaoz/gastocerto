@@ -81,9 +81,6 @@ def remover_gasto(request, pk):
         return redirect("lista_gastos")
 
     return render(request, "gastos/confirmar_remocao.html", {"gasto": gasto})
-from django.shortcuts import render, get_object_or_404, redirect
-from .models import Gasto
-from .forms import GastoForm
 from .services import buscar_cotacoes  # ← nova importação
 
 
