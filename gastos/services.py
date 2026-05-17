@@ -16,5 +16,5 @@ def buscar_cotacoes():
             "usd": float(dados["USDBRL"]["bid"]),
             "eur": float(dados["EURBRL"]["bid"]),
         }
-    except (requests.RequestException, KeyError, ValueError):
+    except Exception:
         return None
