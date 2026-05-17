@@ -81,3 +81,26 @@ def remover_gasto(request, pk):
         return redirect("lista_gastos")
 
     return render(request, "gastos/confirmar_remocao.html", {"gasto": gasto})
+from django.shortcuts import render, get_object_or_404, redirect
+from .models import Gasto
+from .forms import GastoForm
+from .services import buscar_cotacoes  # ← nova importação
+
+
+def lista(request):
+    categoria = request.GET.get("categoria", "")
+    gastos = Gasto.objects.all()
+    if categoria:
+        gastos = gastos.filter(categoria=categoria)
+
+    total = sum(g.valor for g in gastos)
+    cotacoes = buscar_cotacoes()  # ← nova chamada
+
+    return render(request, "gastos/lista.html", {
+        "gastos": gastos,
+        "total": total,
+        "categoria_filtro": categoria,
+        "cotacoes": cotacoes,  # ← passa para o template
+    })
+
+# ... resto das views permanecem iguais

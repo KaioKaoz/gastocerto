@@ -10,6 +10,18 @@
 <!-- Resumo por categoria -->
 {% if resumo %}
 <div class="card">
+  <!-- Bloco de Cotações (logo após o <h1> ou cabeçalho da página) -->
+{% if cotacoes %}
+<div class="cotacoes-card">
+  <h3>💱 Cotações do Dia</h3>
+  <p>🇺🇸 USD: <strong>R$ {{ cotacoes.usd|floatformat:2 }}</strong></p>
+  <p>🇪🇺 EUR: <strong>R$ {{ cotacoes.eur|floatformat:2 }}</strong></p>
+</div>
+{% else %}
+<div class="cotacoes-card cotacoes-erro">
+  <p>⚠️ Cotações temporariamente indisponíveis.</p>
+</div>
+{% endif %}
   <h3 style="margin-bottom:1rem; font-size:1rem; color:#4a5568;">📊 Resumo por Categoria</h3>
   <div style="display:flex; flex-wrap:wrap; gap:0.75rem;">
     {% for cat, subtotal in resumo.items %}
