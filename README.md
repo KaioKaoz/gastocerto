@@ -1,5 +1,5 @@
 # 💰 GastoCerto
-
+🌐 **Aplicação publicada:** [https://gastocerto.onrender.com](https://gastocerto.onrender.com)
 ![CI](https://github.com/SEU_USUARIO/gastocerto/actions/workflows/ci.yml/badge.svg)
 ![Versão](https://img.shields.io/badge/versão-1.0.0-blue)
 ![Python](https://img.shields.io/badge/python-3.9%2B-green)
