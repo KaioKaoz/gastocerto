@@ -40,11 +40,12 @@ TEMPLATES = [
     },
 ]
 
+import dj_database_url
+
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    }
+    'default': dj_database_url.parse(
+        'postgresql://postgres:4X4GP8kIsFDrR7tY@db.ghpfvktqmyaotnyocgms.supabase.co:5432/postgres'
+    )
 }
 
 STATIC_URL = "static/"
