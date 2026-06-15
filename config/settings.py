@@ -41,10 +41,14 @@ TEMPLATES = [
 ]
 
 import dj_database_url
+from dotenv import load_dotenv
+
+load_dotenv()
 
 DATABASES = {
-    'default': dj_database_url.parse(
-        'postgresql://postgres:4X4GP8kIsFDrR7tY@db.ghpfvktqmyaotnyocgms.supabase.co:5432/postgres'
+    "default": dj_database_url.config(
+        default=f"sqlite:///{BASE_DIR / 'db.sqlite3'}",
+        conn_max_age=600,
     )
 }
 
