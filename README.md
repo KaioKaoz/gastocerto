@@ -172,6 +172,6 @@ gastocerto/
 
 ## 👤 Autor
 
-**Contribuição realizada por Eric Kelvin Da Silva**Eric Kelvin Da Silva
+**Contribuição realizada por Eric Kelvin Da Silva**Eric Kelvin Da Silvadia 14/06
 🔗 [github.com/SEU_USUARIO/gastocerto](https://github.com/SEU_USUARIO/gastocerto)
-Contribuição realizada por Eric Kelvin Da Silva.
+Contribuição realizada por Eric Kelvin Da Silva.dia 14/06
