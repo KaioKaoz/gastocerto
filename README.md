@@ -174,4 +174,11 @@ gastocerto/
 
 **Contribuição realizada por Eric Kelvin Da Silva**Eric Kelvin Da Silvadia 14/06
 🔗 [github.com/SEU_USUARIO/gastocerto](https://github.com/SEU_USUARIO/gastocerto)
-Contribuição realizada por Eric Kelvin Da Silva.dia 14/06
+Contribuição realizada por Eric Kelvin Da Silva.dia 14/06## Integrantes do Grupo
+* Eric Kelvin Da Silva
+* [Nome do Colega 1]
+* [Nome do Colega 2]
+
+## Sobre o Projeto
+* **Link do deploy:** [https://gastocerto-1.onrender.com](https://gastocerto-1.onrender.com)
+* **Tecnologias usadas:** Django, PostgreSQL, Supabase, Render
